@@ -1,6 +1,5 @@
 import os
 from pathlib import Path
-from tkinter.tix import Tree
 from dotenv import load_dotenv
 
 load_dotenv()
