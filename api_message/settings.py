@@ -33,6 +33,7 @@ INSTALLED_APPS = [
 
     'message',
     'username',
+    'data',
 ]
 
 MIDDLEWARE = [

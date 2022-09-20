@@ -9,6 +9,7 @@ from django.conf.urls.static import static
 
 from username.api.router import router_username
 from message.api.router import router_message
+from data.api.router import router_data
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -26,5 +27,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('api/', include(router_username.urls)),
-    path('api/', include(router_message.urls))
+    path('api/', include(router_message.urls)),
+    path('api/', include(router_data.urls)),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
