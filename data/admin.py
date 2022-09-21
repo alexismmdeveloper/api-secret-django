@@ -3,4 +3,4 @@ from data.models import Data
 
 @admin.register(Data)
 class DataAdmin(admin.ModelAdmin):
-    list_display = ['id','username', 'created']
+    list_display = ['username', 'created']
