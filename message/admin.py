@@ -3,4 +3,4 @@ from message.models import Messages
 
 @admin.register(Messages)
 class MessagesAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['id','username', 'message', 'created']
